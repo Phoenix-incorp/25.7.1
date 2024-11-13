@@ -1,16 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"log"
+    "fmt"
+    "log"
 )
 
 func main() {
-	n := 0
-	fmt.Print("Введите целое число: ")
-	_, err := fmt.Scan(&n)
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Printf("Вы ввели число: %d\n", n)
+    var input string
+    fmt.Print("Введите целые числа: ")
+    _, err := fmt.Scan(&input)
+    if err != nil {
+        log.Fatal(err)
+    }
+    fmt.Printf("Вы ввели следующие данные: %s\n", input)
 }
+
